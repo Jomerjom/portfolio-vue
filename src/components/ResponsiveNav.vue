@@ -139,7 +139,6 @@
 
 
 @media screen and (min-width: 768px) {
-
     .navbar * {
         position: unset;
     }
@@ -148,7 +147,11 @@
         height: 64px;
         background: none;
         padding: 0 2rem;
-        max-width: 1280px;
+        padding-top: 1rem;
+        max-width: 1080px;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
     }
 
     .navbar-container input[type="checkbox"],
@@ -160,7 +163,6 @@
         height: 64px;
         display: flex;
         justify-content: flex-end;
-        
     }
 
     .navbar .menu-items {
@@ -172,12 +174,19 @@
         display: flex;
         flex-direction: row;
         gap: 1.5rem;
-
         align-items: center;
         margin-right: 0px;
         margin: 0px;
         padding: 0px;
-
     }
 }
+
+@media screen and (min-width: 1112px) {
+    .navbar {
+        padding: 0;
+        padding-top: 1rem;
+    }
+}
+
+
 </style>
