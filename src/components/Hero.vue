@@ -28,6 +28,8 @@ defineProps({
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    width: 100%;
+    padding: 0 1rem;
 }
 
 
@@ -59,5 +61,39 @@ defineProps({
 
 .hero {
     height: 100vh;
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 100vh;
+        /* width: 100%; */
+        padding: 0;
+    }
+
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        max-width: 36rem;
+    }
+
+    .hero-image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-image {
+        width: 250px;
+        height: 250px;
+    }
+    
+}
+
+@media screen and (min-width: 1112px) {
+
 }
 </style>
