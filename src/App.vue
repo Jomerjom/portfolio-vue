@@ -1,30 +1,27 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import Hero from './components/Hero.vue'
+import ResponsiveNav from './components/ResponsiveNav.vue';
+
+
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <ResponsiveNav />
+  <main>
+  <Hero
+  miniPitch="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed metus erat. Proin aliquet facilisis justo vel fringilla. Praesent eu tellus in dui gravida pharetra. Ut posuere purus quis neque."
+  yourName="Joachim" imagePath="/public/avatar-placeholder.webp" />
+</main>
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+main {
+  padding: 0 1rem;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+@media (min-width: 768px) {
+  main {
+    padding: 0 2rem;
+  }
 }
 </style>
