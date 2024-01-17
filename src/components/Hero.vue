@@ -56,7 +56,9 @@ defineProps({
     border-radius: 100%;
     width: 200px;
     height: 200px;
+    object-fit: cover;
     border: 0;
+    object-position: 0;
 }
 
 .hero {
@@ -67,7 +69,7 @@ defineProps({
     .hero {
         flex-direction: row;
         justify-content: space-between;
-        height: 100vh;
+        height: 100dvh;
         /* width: 100%; */
         padding: 0;
     }
