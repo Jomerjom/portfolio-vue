@@ -1,0 +1,50 @@
+[
+  {
+    "name": "vite",
+    "logoPath": "/vite-logo.png"
+  },
+  {
+    "name": "git",
+    "logoPath": "/git-logo.png"
+  },
+  {
+    "name": "github",
+    "logoPath": "/github-logo.png"
+  },
+  {
+    "name": "html5",
+    "logoPath": "/html5-logo.png"
+  },
+  {
+    "name": "css3",
+    "logoPath": "/css3-logo.png"
+  },
+  {
+    "name": "javascript",
+    "logoPath": "/javascript-logo.png"
+  },
+  {
+    "name": "figma",
+    "logoPath": "/figma-logo.png"
+  },
+  {
+    "name": "tailwind",
+    "logoPath": "/tailwind-logo.png"
+  },
+  {
+    "name": "vue",
+    "logoPath": "/vue-logo.png"
+  },
+  {
+    "name": "java",
+    "logoPath": "/java-logo.png"
+  },
+  {
+    "name": "python",
+    "logoPath": "/python-logo.png"
+  },
+  {
+    "name": "react",
+    "logoPath": "/react-logo.png"
+  }
+]
