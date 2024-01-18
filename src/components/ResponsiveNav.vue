@@ -145,13 +145,14 @@
 
     .navbar {
         height: 64px;
-        background: none;
+        background-color: #242424;;
         padding: 0 2rem;
         padding-top: 1rem;
         max-width: 1080px;
         display: flex;
         justify-content: flex-end;
         width: 100%;
+        opacity: 100%;
     }
 
     .navbar-container input[type="checkbox"],
