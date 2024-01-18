@@ -5,12 +5,12 @@ import ProjectCard from './ProjectCard.vue';
 
 <template>
     <div class="project-row">
-        <ProjectCard class="projectCard-one ProjectCard" projectName="Test Project" projectDescription="A Vite vue project component, to show of your skills on your portfolio!" imagePath="/public/kitty2.png" />
-        <ProjectCard class="projectCard-two ProjectCard" projectName="Test Project" projectDescription="A Vite vue project component, to show of your skills on your portfolio!" imagePath="/public/kitty2.png" />
+        <ProjectCard class="projectCard-one ProjectCard" projectName="Test Project" projectDescription="A Vite vue project component, to show of your skills on your portfolio!" imagePath="/public/project-placeholder.png" />
+        <ProjectCard class="projectCard-two ProjectCard" projectName="Test Project" projectDescription="A Vite vue project component, to show of your skills on your portfolio!" imagePath="/public/project-placeholder.png" />
     </div>
     <div class="project-row">
-        <ProjectCard class="projectCard-three ProjectCard" projectName="Test Project" projectDescription="A Vite vue project component, to show of your skills on your portfolio!" imagePath="/public/kitty2.png" />
-        <ProjectCard class="projectCard-four ProjectCard" projectName="Test Project" projectDescription="A Vite vue project component, to show of your skills on your portfolio!" imagePath="/public/kitty2.png" />
+        <ProjectCard class="projectCard-three ProjectCard" projectName="Test Project" projectDescription="A Vite vue project component, to show of your skills on your portfolio!" imagePath="/public/project-placeholder.png" />
+        <ProjectCard class="projectCard-four ProjectCard" projectName="Test Project" projectDescription="A Vite vue project component, to show of your skills on your portfolio!" imagePath="/public/project-placeholder.png" />
     </div>
 
 </template>

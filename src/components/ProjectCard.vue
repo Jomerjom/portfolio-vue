@@ -52,11 +52,11 @@ defineProps({
     justify-content: center;
     gap: 1rem;
     padding: 1rem; 
+    transition: opacity 0.3s ease-in-out;
 }
 
 .project-card-info:hover {
     opacity: 1;
-    transition: opacity 0.3s ease-in-out;
 }
 
 h2 {
