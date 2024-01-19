@@ -6,6 +6,24 @@ defineProps({
     imagePath: String,
 })
 
+const scrollToSection = (event, id) => {
+    event.preventDefault();
+    const element = document.getElementById(id);
+
+    if (element) {
+        const targetPosition =
+            element.getBoundingClientRect().top +
+            window.scrollY -
+            window.innerHeight / 2 +
+            element.getBoundingClientRect().height / 2;
+
+        window.scrollTo({
+            top: targetPosition,
+            behavior: "smooth",
+        });
+    }
+};
+
 </script>
 
 <template>
@@ -19,7 +37,7 @@ defineProps({
             <img class="hero-image" v-bind:src="imagePath" v-bind:alt="yourName + '\'s avatar'">
         </figure>
     </section>
-    <a class="arrow-down">
+    <a class="arrow-down" @click="scrollToSection($event, 'projectPage')">
         <img class="" src="/Arrow-down.svg" alt="Scroll down">
     </a>
 </template>
