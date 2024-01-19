@@ -29,11 +29,6 @@ main {
   gap: 6rem;
 }
 
-.margin-bottom {
-  /* margin-bottom: 2rem; */
-
-}
-
 @media (min-width: 768px) {
   main {
     max-width: 1080px;
