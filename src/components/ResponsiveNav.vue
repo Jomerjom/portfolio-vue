@@ -57,8 +57,8 @@
     position: absolute;
     display: block;
     height: 32px;
-    width: 35px;
-    top: 20px;
+    width: 40px;
+    top: 12px;
     right: 1rem;
     z-index: 5;
     opacity: 0;
@@ -67,7 +67,7 @@
 .navbar-container .hamburger-lines {
     display: block;
     height: 23px;
-    width: 35px;
+    width: 30px;
     position: absolute;
     top: 17px;
     right: 1rem;
@@ -126,7 +126,7 @@
 }
 
 .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line1 {
-    transform: rotate(35deg);
+    transform: rotate(42deg);
 }
 
 .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line2 {
@@ -134,7 +134,7 @@
 }
 
 .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
-    transform: rotate(-35deg);
+    transform: rotate(-42deg);
 }
 
 
