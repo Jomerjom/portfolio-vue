@@ -59,6 +59,7 @@ defineProps({
     gap: 2rem;
     width: 100%;
     padding: 0 1rem;
+    height: 100dvh;
 }
 
 
@@ -88,10 +89,6 @@ defineProps({
     object-fit: cover;
     border: 0;
     object-position: 0;
-}
-
-.hero {
-    height: 100dvh;
 }
 
 @media screen and (min-width: 768px) {
