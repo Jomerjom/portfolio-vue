@@ -1,27 +1,56 @@
 <script setup>
 
 defineProps({
-  miniPitch: String,
-  yourName: String,
-  imagePath: String,
+    miniPitch: String,
+    yourName: String,
+    imagePath: String,
 })
 
 </script>
 
 <template>
-<section class="hero">
-    <div class="hero-text">
-        <p class="hero-introduction">Hei, mitt navn er</p>
-        <h1 class="hero-name"> {{ yourName }}</h1>
-        <h2 class="hero-mini-pitch"> {{ miniPitch }}</h2>
-    </div>
-    <figure class="hero-image-container">
-        <img class="hero-image" v-bind:src="imagePath" v-bind:alt="yourName + '\'s avatar'">
-    </figure>
-</section>
+    <section class="hero">
+        <div class="hero-text">
+            <p class="hero-introduction">Hei, mitt navn er</p>
+            <h1 class="hero-name"> {{ yourName }}</h1>
+            <h2 class="hero-mini-pitch"> {{ miniPitch }}</h2>
+        </div>
+        <figure class="hero-image-container">
+            <img class="hero-image" v-bind:src="imagePath" v-bind:alt="yourName + '\'s avatar'">
+        </figure>
+    </section>
+    <a class="arrow-down">
+        <img class="" src="/Arrow-down.svg" alt="Scroll down">
+    </a>
 </template>
 
 <style scoped>
+.arrow-down {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bounce 1s infinite;
+}
+
+.arrow-down img {
+    width: 3rem;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    50% {
+        transform: translateX(-50%) translateY(4px);
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
 .hero {
     display: flex;
     flex-direction: column;
@@ -92,10 +121,8 @@ defineProps({
         width: 250px;
         height: 250px;
     }
-    
-}
-
-@media screen and (min-width: 1112px) {
 
 }
+
+@media screen and (min-width: 1112px) {}
 </style>
