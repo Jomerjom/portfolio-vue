@@ -9,16 +9,16 @@ defineProps({
 </script>
 
 <template>
-<div class="hero">
+<section class="hero">
     <div class="hero-text">
-        <h2 class="hero-introduction">Hei, mitt navn er</h2>
+        <p class="hero-introduction">Hei, mitt navn er</p>
         <h1 class="hero-name"> {{ yourName }}</h1>
-        <p class="hero-mini-pitch"> {{ miniPitch }}</p>
+        <h2 class="hero-mini-pitch"> {{ miniPitch }}</h2>
     </div>
-    <div class="hero-image-container">
+    <figure class="hero-image-container">
         <img class="hero-image" v-bind:src="imagePath" v-bind:alt="yourName + '\'s avatar'">
-    </div>
-</div>
+    </figure>
+</section>
 </template>
 
 <style scoped>
@@ -62,7 +62,7 @@ defineProps({
 }
 
 .hero {
-    height: 100vh;
+    height: 100dvh;
 }
 
 @media screen and (min-width: 768px) {

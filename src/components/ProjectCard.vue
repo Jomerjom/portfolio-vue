@@ -11,7 +11,7 @@ defineProps({
 <template>
     <div class="project-card" :style="{ backgroundImage: 'url(' + imagePath + ')' }">
         <div class="project-card-info">
-            <h2 class="project-card-name">{{ projectName }}</h2>
+            <h3 class="project-card-name">{{ projectName }}</h3>
             <p class="project-card-description">{{ projectDescription }}</p>
             <div>
                 <a class="project-card-view-link" v-bind:href="projectViewLink">
@@ -85,6 +85,5 @@ button {
     margin: 0.5rem;
     cursor: pointer;
 }
-
 
 </style>
