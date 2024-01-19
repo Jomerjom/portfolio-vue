@@ -8,7 +8,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react-icons": "^5.0.1",
     "vue": "^3.2.45"
   },
   "devDependencies": {
